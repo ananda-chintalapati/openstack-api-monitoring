@@ -34,7 +34,7 @@ if token is not None:
     url = endpoint + '/v2/capabilities'
     response = request.get(url, headers=headers)
     if response.status_code != 201:
-        log.info('Swift call failed with error code %s ' % response.status_code)
+        log.info('Ceilometer call failed with error code %s ' % response.status_code)
     else:
         log.info('Successfully retrieved server details for %s ' % tenant_id)
 else:
