@@ -37,6 +37,7 @@ def get_auth_token(username, password, tenant, auth_url):
     token = None
     if response is not None:
         token = response.json()['access']['id']['token']
+    return token
 
 def get_public_endpoint(component, region=None):
     if response is not None:
